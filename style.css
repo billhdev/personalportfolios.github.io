@@ -1,0 +1,343 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #121e2f;
+	color: #cad2ea;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+h5 {
+	text-align: center;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+img {
+	width: 100%;
+	height: 20vh;
+}
+
+/* Navigation */
+header {
+	padding: 2em 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+ul li {
+	margin: 0 0.5em;
+}
+
+/* Navigation Word */
+.navWord {
+	display: flex;
+	align-items: baseline;
+	margin-left: 2em;
+}
+
+.aNavWord {
+	text-decoration: none;
+	color: #cad2ea;
+	padding-bottom: 0.3em;
+	font-size: 1.3rem;
+	margin-right: 0.5em;
+}
+
+.aNavWord:hover,
+.aNavWord:focus {
+	border-bottom: 2px solid lightseagreen;
+}
+
+/* Resume Button */
+.resumeBtn {
+	border: 2px solid lightseagreen;
+	color: inherit;
+	padding: 0.5em 0.8em;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+
+.resumeBtn:hover,
+.resumeBtn:focus {
+	background-color: lightseagreen;
+	color: #121e2f;
+	transition: background-color 0.2s;
+}
+
+/* Navigation Icon */
+.aNavIcon {
+	text-decoration: none;
+	color: #cad2ea;
+	padding: 0.5em;
+}
+
+.aNavIcon:hover,
+.aNavIcon:focus {
+	color: lightseagreen;
+}
+
+section {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+/* Main Content */
+.hello {
+	margin-left: 2em;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 50vh;
+}
+
+.greeting {
+	margin-right: 0 3.5em;
+	padding-right: 3em;
+}
+
+span {
+	display: block;
+	font-weight: 700;
+}
+
+.fa {
+	color: #f0cf5b;
+	font-size: 2.5rem;
+	margin-top: 0.5em;
+}
+
+.fa-circle-down:hover {
+	color: #f0d05b7e;
+}
+
+h5 {
+	margin-top: 0.2em;
+	margin-bottom: 0;
+}
+
+.hero {
+	width: 500px;
+}
+
+.exploreBtn {
+	margin-top: 4em;
+	display: block;
+	text-align: center;
+}
+
+.clickToBtn {
+	padding: 0.5em 0.8em;
+	background-color: lightseagreen;
+	font-size: 1.3rem;
+	color: inherit;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+/* About Section */
+#about {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about {
+	width: 40%;
+	margin-top: 0.2em;
+	/* margin-bottom: 4em; */
+}
+
+.ticks,
+.hero2 {
+	width: 30%;
+}
+
+.hero2 {
+	align-self: center;
+}
+
+.ticks {
+	align-self: flex-end;
+}
+
+/* Skills Section */
+.skill {
+	margin: 2.5em 4em 5em;
+}
+
+.pSkill {
+	width: 90%;
+	text-align: center;
+}
+.rowSkill {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	padding: 0.725em;
+	grid: 50px / auto auto auto;
+}
+.rowSkill div {
+	text-align: center;
+	padding: 1.2em 0;
+}
+
+/* Projects Section */
+.projects {
+	margin-top: 2.5em;
+	margin-bottom: 5em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.container {
+	width: 350px;
+	background: #1d293b;
+	border: 1px solid lightseagreen;
+	border-radius: 5px;
+	padding: 1.5em;
+	margin-bottom: 3em;
+	box-shadow: 3px 6px 15px 0px rgba(32, 178, 170, 0.75);
+	-webkit-box-shadow: 3px 6px 15px 0px rgba(32, 178, 170, 0.75);
+	-moz-box-shadow: 3px 6px 15px 0px rgba(32, 178, 170, 0.75);
+}
+
+.container img {
+	width: 95%;
+	object-fit: cover;
+	margin: 0.2em;
+}
+
+.container:hover {
+	box-shadow: 5px 15px 15px 0px rgba(32, 178, 170, 0.75);
+	-webkit-box-shadow: 5px 15px 15px 0px rgba(32, 178, 170, 0.75);
+	-moz-box-shadow: 5px 15px 15px 0px rgba(32, 178, 170, 0.75);
+	transform: scale(1.1);
+	transition: transform 0.5s ease-in-out;
+}
+
+.fe {
+	color: #cad2ea;
+	font-size: 2em;
+}
+
+.fe:hover,
+.fe:focus {
+	color: lightseagreen;
+}
+
+.portfolioBtn {
+	margin-right: 0.5em;
+}
+
+/* Footer */
+footer {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.aFooter {
+	color: #cad2ea;
+	margin-right: 2em;
+}
+
+small {
+	text-align: center;
+	color: #cad2ea;
+}
+
+/* Scroll To Top Button */
+button {
+	align-self: flex-end;
+	margin-right: 0.5em;
+	margin-bottom: 2em;
+}
+
+#scrollToTopBtn {
+	background-color: lightseagreen;
+	border: none;
+	border-radius: 50%;
+	color: #cad2ea;
+	cursor: pointer;
+	font-size: 1.5rem;
+	line-height: 48px;
+	width: 48px;
+}
+
+#scrollToTopBtn:hover {
+	background-color: rgba(32, 178, 171, 0.5);
+}
+
+@media (max-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.brand {
+		text-align: center;
+	}
+
+	.navWord {
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
+	}
+
+	.navIcon {
+		display: none;
+	}
+
+	.hello {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about {
+		width: 80%;
+	}
+
+	.ticks,
+	.hero2 {
+		display: none;
+	}
+
+	.navigation {
+		margin-left: 2em;
+	}
+
+	small {
+		margin-bottom: 2em;
+	}
+
+	#scrollToTopBtn {
+		display: none;
+	}
+}
