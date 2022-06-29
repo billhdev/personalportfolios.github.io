@@ -65,7 +65,7 @@ ul li {
 	color: #cad2ea;
 	padding-bottom: 0.3em;
 	font-size: 1.3rem;
-	margin-right: 0.5em;
+	/* margin-right: 0.5em; */
 }
 
 .aNavWord:hover,
@@ -196,13 +196,12 @@ h5 {
 }
 .rowSkill {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
 	gap: 10px;
-	padding: 0.725em;
-	grid: 50px / auto auto auto;
-}
-.rowSkill div {
 	text-align: center;
+}
+.liSkill {
 	padding: 1.2em 0;
 }
 
@@ -294,32 +293,42 @@ button {
 	background-color: rgba(32, 178, 171, 0.5);
 }
 
-@media (max-width: 768px) {
-	header {
-		display: flex;
-		flex-direction: column;
-	}
-
+@media (max-width: 480px) {
 	.brand {
-		text-align: center;
+		display: none;
 	}
 
 	.navWord {
-		width: 35px;
-		height: 5px;
-		background-color: black;
-		margin: 6px 0;
+		width: 480px;
+		margin: 0 auto;
+		display: block;
+		position: absolute;
+	}
+
+	.resumeBtn {
+		position: relative;
+		left: 45%;
+	}
+	.resumeBtn,
+	.aNavWord {
+		font-size: 1rem;
 	}
 
 	.navIcon {
 		display: none;
 	}
 
+	main {
+		margin-top: 4em;
+	}
 	.hello {
 		display: flex;
 		flex-direction: column;
 	}
 
+	section {
+		margin: 0 auto;
+	}
 	.about {
 		width: 80%;
 	}
@@ -329,15 +338,20 @@ button {
 		display: none;
 	}
 
-	.navigation {
-		margin-left: 2em;
-	}
-
 	small {
 		margin-bottom: 2em;
 	}
 
 	#scrollToTopBtn {
 		display: none;
+	}
+
+	footer > ul > li {
+		font-size: 1rem;
+	}
+
+	.aFooter {
+		text-align: center;
+		margin: 0 auto;
 	}
 }
